@@ -48,7 +48,7 @@ window.onload = function() {
                             Một năm qua anh đã học được cách yêu thương, trân trọng từng khoảnh khắc mình bên nhau và biết rằng
                             hạnh phúc đơn giản là chỉ cần "có em"-
                         </span><br>
-                        <span class="say">-Mong cho tình yêu của mình sẽ kéo dài thêm nhiều năm nữa.
+                        <span class="say">-Mong cho tình yêu của tụi mình sẽ kéo dài thêm nhiều năm nữa.
                             Sẽ hạnh phúc hơn, nhiều kỉ niệm hơn và cùng nhau vượt qua mọi thử thách. <b>YÊU EM ❤️</b>- </span>     
                         <span class="say"><img src="image/1.jpg" alt=""></span>
                         <span class="say"><img src="image/4.jpg" alt=""></span>
@@ -63,6 +63,9 @@ window.onload = function() {
                 <span class="STYLE1"></span>
                 <!-- <div id="clock"></div> -->
             </div>
+            <div class="img-overlay" id="imgOverlay">
+  <img id="zoomedImg" src="" alt="">
+</div>
             <canvas id="canvas" width="1100" height="680"></canvas>
         </div>
 
@@ -230,6 +233,24 @@ window.onload = function() {
 
             runAsync().start();
         })();
+      document.addEventListener("DOMContentLoaded", function() {
+  const overlay = document.getElementById("imgOverlay");
+  const zoomedImg = document.getElementById("zoomedImg");
+  const textContainer = document.getElementById("code"); // cha chứa .say
+
+  // Bắt sự kiện click vào IMG bên trong .say
+  textContainer.addEventListener("click", function(e) {
+    if (e.target.tagName === "IMG") {
+      zoomedImg.src = e.target.src;
+      overlay.classList.add("active");
+    }
+  });
+
+  // Tắt overlay khi click ra ngoài
+  overlay.addEventListener("click", function() {
+    overlay.classList.remove("active");
+  });
+});
     </script>
     <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
         <p>Contact: <a href="#" target="_blank">chicong.dev31@gmail.com</a></p>
