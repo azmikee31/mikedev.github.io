@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" type="image/png" href="image/favicon.ico">
-    <title>Luv U</title>
+    <title>HAPPY ANNIVERSARY</title>
     <link type="text/css" rel="stylesheet" href="./renxi/default.css">
     <script type="text/javascript" src="./renxi/jquery.min.js"></script>
     <script type="text/javascript" src="./renxi/jscex.min.js"></script>
@@ -27,26 +27,34 @@ window.onload = function() {
 <body>
 
     <audio autoplay="autoplay">
-					<source src="music/nhac.mp3" type="audio/mp3" />
-            </audio>
+        <source src="music/nhac.mp3" type="audio/mp3" />
+    </audio>
 
 
 
     <div id="main">
-        <div id="error">Trình duyệt của bạn không được hỗ trợ. Để được hỗ trợ liên hệ conghc31@gmail.com. Hoặc sử dụng (<a href="http://www.google.cn/chrome">Chrome</a>) và (<a href="http://firefox.com/download/">Firefox</a>)</div>
+        <div id="error">Trình duyệt của bạn không được hỗ trợ. Để được hỗ trợ liên hệ conghc31@gmail.com. Hoặc sử dụng
+            (<a href="http://www.google.cn/chrome">Chrome</a>) và (<a href="http://firefox.com/download/">Firefox</a>)
+        </div>
         <div id="wrap">
             <div id="text" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">
                 <div id="code">
-				    <h3<span class="say"></span> -I LOVE YOU-</span></h3>
-					<br></br>
-                    <!-- <font color="#0000FF"><span class="say">Nhân ngày Quốc tế phụ nữ,em xin chúc các cô những lời chúc tốt đẹp nhất. Chúc cô luôn tràn đầy nhiệt huyết với sự nghiệp cao cả của mình, chúc cô có thật nhiều sức khỏe và vững bước chèo lái con thuyền đưa chúng em đến bến bờ tri thức. </span><br>
-                        <span class="say"> </span><br>
-						<span class="say">-Nam chúc các bạn nữ luôn vui vẻ, trẻ khỏe và xinh đẹp.</span><br>
-                        <span class="say">-Chúc cho những dự định, kế hoạch của các bạn đều thành công và làm được những điều mình muốn.</span><br>
-                        <span class="say">-Chúc các bạn có 1 ngày 8/3 thật nhiều niềm vui và hạnh phúc</span><br>
-						<span class="say">-Chúc mẹ 8/3 vui vẻ nhó</span><br> -->
-                        <span class="say"><span class="space"><img src="image/tym.png" alt=""><br>
-                       
+                    <h2> <span class="say"></span> -HAPPY 1 YEAR ANNIVERSARY-</span></h2>
+                    <font color="#0000FF"><span class="say">-Nay là ngày kỉ niệm một năm mình bên nhau đó tình yêu của anh. 
+                        Một năm nghe ngắn ngủi thật đó, nhưng để lại biết bao nhiêu là kỉ niệm, cảm xúc và những lần hờn dỗi nhau.
+                        Nhưng sau tất cả thì tụi mình chọn cách không rời bỏ nhau.-</span>
+                        <br>
+                        <span class="say">-Cảm ơn em đã đến bên anh. Người đã khiến mỗi ngày bình thường của anh trở nên đặc biệt.
+                            Một năm qua anh đã học được cách yêu thương, trân trọng từng khoảnh khắc mình bên nhau và biết rằng
+                            hạnh phúc đơn giản là chỉ cần "có em"-
+                        </span><br>
+                        <span class="say">-Mong cho tình yêu của mình sẽ kéo dài thêm nhiều năm nữa.
+                            Sẽ hạnh phúc hơn, nhiều kỉ niệm hơn và cùng nhau vượt qua mọi thử thách. <b>YÊU EM ❤️</b>- </span>     
+                        <span class="say"><img src="image/1.jpg" alt=""></span>
+                        <span class="say"><img src="image/4.jpg" alt=""></span>
+                        <span class="say"><img src="image/3.jpg" alt=""></span>
+                        <span class="say"><img src="image/5.jpg" alt=""></span>
+                        
                     </font>
                     </p>
                 </div>
@@ -64,7 +72,7 @@ window.onload = function() {
     </script>
 
     <script>
-        (function() {
+        (function () {
             var canvas = $('#canvas');
 
             if (!canvas[0].getContext) {
@@ -117,7 +125,7 @@ window.onload = function() {
             var foot = tree.footer;
             var hold = 1;
 
-            canvas.click(function(e) {
+            canvas.click(function (e) {
                 var offset = canvas.offset(),
                     x, y;
                 x = e.pageX - offset.left;
@@ -128,7 +136,7 @@ window.onload = function() {
                     canvas.unbind("mousemove");
                     canvas.removeClass('hand');
                 }
-            }).mousemove(function(e) {
+            }).mousemove(function (e) {
                 var offset = canvas.offset(),
                     x, y;
                 x = e.pageX - offset.left;
@@ -136,7 +144,7 @@ window.onload = function() {
                 canvas.toggleClass('hand', seed.hover(x, y));
             });
 
-            var seedAnimate = eval(Jscex.compile("async", function() {
+            var seedAnimate = eval(Jscex.compile("async", function () {
                 seed.draw();
                 while (hold) {
                     $await(Jscex.Async.sleep(10));
@@ -152,21 +160,21 @@ window.onload = function() {
                 }
             }));
 
-            var growAnimate = eval(Jscex.compile("async", function() {
+            var growAnimate = eval(Jscex.compile("async", function () {
                 do {
                     tree.grow();
                     $await(Jscex.Async.sleep(10));
                 } while (tree.canGrow());
             }));
 
-            var flowAnimate = eval(Jscex.compile("async", function() {
+            var flowAnimate = eval(Jscex.compile("async", function () {
                 do {
                     tree.flower(2);
                     $await(Jscex.Async.sleep(10));
                 } while (tree.canFlower());
             }));
 
-            var moveAnimate = eval(Jscex.compile("async", function() {
+            var moveAnimate = eval(Jscex.compile("async", function () {
                 tree.snapshot("p1", 240, 0, 610, 680);
                 while (tree.move("p1", 500, 0)) {
                     foot.draw();
@@ -181,7 +189,7 @@ window.onload = function() {
                 canvas.css("background", "none");
             }));
 
-            var jumpAnimate = eval(Jscex.compile("async", function() {
+            var jumpAnimate = eval(Jscex.compile("async", function () {
                 var ctx = tree.ctx;
                 while (true) {
                     tree.ctx.clearRect(0, 0, width, height);
@@ -191,7 +199,7 @@ window.onload = function() {
                 }
             }));
 
-            var textAnimate = eval(Jscex.compile("async", function() {
+            var textAnimate = eval(Jscex.compile("async", function () {
                 var together = new Date();
                 together.setFullYear(2018, 2, 8);
                 together.setHours(0);
@@ -209,7 +217,7 @@ window.onload = function() {
                 }
             }));
 
-            var runAsync = eval(Jscex.compile("async", function() {
+            var runAsync = eval(Jscex.compile("async", function () {
                 $await(seedAnimate());
                 $await(growAnimate());
                 $await(flowAnimate());
